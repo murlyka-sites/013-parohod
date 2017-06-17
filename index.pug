@@ -1,0 +1,192 @@
+doctype html
+html(lang="ru")
+	head
+		title parohod — Главная
+		include pug/meta/meta
+		include pug/meta/link
+		//- include pug/meta/test
+		
+		style.
+			body {
+				//- background: url(tests/glass/index.jpg) center top;
+			}
+	body
+		include pug/blocks/header
+		
+		.main.main_banner
+			a.main__banner(href="#")
+				img(src="images/banner/1.png")
+			.main__inner.container: .row 
+				.col-xs-12: .row: .main__grid: .main-grid
+					.main-grid__item.main-grid__item_4x: .news-item.news-item_bg.news-item_size_4x
+						.news-item__pr.news-item__pr_type_bg: img(src="images/news-item/4x/1.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Ученые установили, что Новгородский кремль был заложен на 300 лет раньше, чем считалось до сих пор
+							.news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 часа назад
+					
+					
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_bg.news-item_size_1-3x
+						.news-item__pr: img(src="images/news-item/x1.3/2.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Инновационная выставка высоких технологий «60 минут будущего» продлится целый ...
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 5 часа назад
+								
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_size_1-3x
+						//- .news-item__pr: img(src="images/news-item/1/4x.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") туризм
+							.news-item__title: a(href="#") Инновационная выставка высоких технологий «60 минут будущего» продлится целый ...
+							.news-item__desc Повышенный спрос на раннее бронирование путешествий в Грецию и на Кипр может привести к тому, что многим российским туристам не хватит путевок. Об этом сообщается на сайте АТОР.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 часа назад
+					
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_bg.news-item_size_1-3x
+						.news-item__pr: img(src="images/news-item/x1.3/4.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Два новгородских медучреждения стали участниками проекта
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 6 часа назад
+						
+								
+					.main-grid__item.main-grid__item_x2: .news-item.news-item_bg.news-item_size_2x
+						.news-item__pr: img(src="images/news-item/2x/5.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Сегодня утром Великий Новгород разбудили гудки паровоза
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 часа назад
+						
+					.main-grid__item.main-grid__item_x2: .news-item.news-item_size_2x.news-item_no-tag
+						.news-item__body
+							.news-item__title: a(href="#") Водитель Subaru предстанет перед судом за наезд на инспектора ГИБДД
+							.news-item__desc Следственный комитет завершил расследование в отношении 31-летнего жителя Старой Руссы Сергея Сыромятникова, который подозревается в наезде на сотрудника ДПС. Следственный комитет завершил расследование в отношении 31-летнего жителя Старой Руссы Сергея Сыромятникова, который подозревается в наезде на сотрудника ДПС.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					
+					.main-grid__item.main-grid__item_x1: .news-item.news-item_bg.news-item_size_1x
+						.news-item__pr: img(src="images/news-item/x1/7.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") В Новгородской области поисковики обнаружили первый медальон этого...
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					.main-grid__item.main-grid__item_x1: .news-item.news-item_size_1x.news-item_no-tag
+						//- .news-item__pr: img(src="images/news-item/x1/8.jpg")
+						.news-item__body
+							//- a.news-item__tag(href="#") история
+							.news-item__title: a(href="#") Экономьте, просто вовремя передавая показания счетчика электроэнергии
+							.news-item__desc Сбытовые компании просят передавать показания счётчика в определённые дни, при этом не все понимают в чем разница и откуда эти сроки. Разберемся и подробно и ответим на вопрос, почему передавать показания с 23 по 26 число – выгодно.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					.main-grid__item.main-grid__item_x1: .news-item.news-item_size_1x
+						//- .news-item__pr: img(src="images/news-item/1/4x.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") История
+							.news-item__title: a(href="#") В Новгородской области поисковики обнаружили первый медальон в новом сезоне
+							.news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					.main-grid__item.main-grid__item_x1: .news-item.news-item_bg.news-item_size_1x.news-item_no-tag
+						.news-item__pr: img(src="images/news-item/x1/10.jpg")
+						.news-item__body
+							//- a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Новгородцам предлагают выбрать территории для благоустройства
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_bg.news-item_size_1-3x
+						.news-item__pr: img(src="images/news-item/x1.3/11.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") В Подберезье на хлебокомбинате нашли партию подсолнечного шрота с аллергенным сорняком
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+								
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_bg.news-item_no-tag.news-item_size_1-3x
+						.news-item__pr: img(src="images/news-item/x1.3/12.jpg")
+						.news-item__body
+							//- a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Замдиректора «Новгородского бекона» выступил в суде свидетелем по делу о вымогательстве 50 млн рублей
+							//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 дня назад
+					
+					.main-grid__item.main-grid__item_x1-3: .news-item.news-item_size_1-3x
+						//- .news-item__pr: img(src="images/news-item/1/4x.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Политика
+							.news-item__title: a(href="#") Лидера новгородского отделения «Коммунистов России» эвакуировали 
+							.news-item__desc Повышенный спрос на раннее бронирование путешествий в Грецию и на Кипр может привести к тому, что многим российским туристам не хватит путевок. Об этом сообщается на сайте АТОР.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 3 дня назад
+					
+					.main-grid__item.main-grid__item_x4: .news-item.news-item_size_4x
+						//- .news-item__pr: img(src="images/news-item/1/4x.jpg")
+						.news-item__body
+							a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") В новгородской Белой башне представят копии трофейных русских знамён
+							.news-item__desc Основной акцент будет сделан на 17 веке. Потому что, во-первых, это период активного функционирования самой башни. Во-вторых, в этот период в наибольшей степени подкреплён источниками. На него также приходится одно из немногих событий, когда новгородской крепости пришлось напрямую выполнять свои функции — это штурм Новгорода шведами в 1611 году. В экспозиции будет много научных реконструкций, также будет использоваться мультимедийное оборудование. Из подлинных предметов, наверное,самое интересное, что можно увидеть — артиллерийское орудие конца 17 века, — рассказал интернет-изданию Прямая речь ведущий научный сотрудник Новгородского музея-заповедника Илья Хохлов.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 3 дня назад
+					
+					.main-grid__item.main-grid__item_x4: .news-item.news-item.news-item_no-tag.news-item_pr.news-item_size_4x
+						.news-item__pr: img(src="images/news-item/x1.3/16.jpg")
+						.news-item__body
+							//- a.news-item__tag(href="#") Наука
+							.news-item__title: a(href="#") Ученые установили, что Новгородский кремль был заложен на 300 лет раньше, чем считалось до сих пор
+							.news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор. Повышенный спрос на раннее бронирование путешествий в Грецию и на Кипр может привести к тому, что многим российским туристам не хватит путевок. Об этом сообщается на сайте АТОР.
+							.news-item__time 
+								span.news-item__time-icon: i.fa.fa-clock-o
+								| 2 часа назад
+					
+					.main-grid__pagination: ul.pagination
+						li.pagination__item: a.pagination__link(href="#") Начало
+						li.pagination__item: a.pagination__link(href="#") Пред.
+						li.pagination__item: a.pagination__link(href="#") 3
+						li.pagination__item: a.pagination__link(href="#") 4
+						li.pagination__item.pagination__item_active: a.pagination__link(href="#") 5
+						li.pagination__item: a.pagination__link(href="#") 6
+						li.pagination__item: a.pagination__link(href="#") 7
+						li.pagination__item: a.pagination__link(href="#") След.
+						li.pagination__item: a.pagination__link(href="#") Конец
+		
+		include pug/blocks/foo
+			
+				
+				
+				
+			.header-second
+		include pug/meta/hidden
+		include pug/meta/scripts
+		

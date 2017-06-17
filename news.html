@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>parohod — новость</title>
+    <!-- Mode IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- Encoding-->
+    <meta charset="UTF-8">
+    <!-- Disabled skype plugin-->
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <!-- Adaptive viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Roboto:400,500&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+      	//- background: url(tests/glass/news.jpg) center top;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-first">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header-first__container">
+                <div class="header-first__column header-first__column_logo"><img src="images/logo.png" width="172" height="34" alt="Пароход"></div>
+                <div class="header-first__column header-first__column_nav header-drop">
+                  <nav class="nav-top">
+                    <ul class="nav-top__list">
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Главное</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Политика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Экономика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">В мире</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Происшествия</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Культура</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">В эфире</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Наука и технологии</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Религия и мировоззрение</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Инфографика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Главное</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Политика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Экономика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">В мире</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Происшествия</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Культура</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Фото</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Главное</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Политика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Экономика</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">В мире</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Происшествия</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Культура</a></li>
+                      <li class="nav-top__item"><a class="nav-top__link" href="#">Фото</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header-first__column header-first__column_search"> 
+                  <form class="search-top">
+                    <input class="search-top__field" type="search">
+                    <button class="search-top__button" type="submit">
+                      <svg class="svg" width="19" height="20">
+                        <use xlink:href="images/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-second">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header-second__container">
+                <div class="header-second__column header-second__column_info">
+                  <ul class="header-info">
+                    <li class="header-info__item">Погода: +8<sup>o</sup></li>
+                    <li class="header-info__item">$: 54,07</li>
+                    <li class="header-info__item">€: 54,07</li>
+                  </ul>
+                </div>
+                <div class="header-second__column header-second__column_social">
+                  <ul class="social">
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="svg" width="25" height="25">
+                          <use xlink:href="images/sprite.svg#social-instagram-white"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="svg" width="25" height="25">
+                          <use xlink:href="images/sprite.svg#social-vk-white"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="svg" width="25" height="25">
+                          <use xlink:href="images/sprite.svg#social-fb-white"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="svg" width="25" height="25">
+                          <use xlink:href="images/sprite.svg#social-twitter-white"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="svg" width="25" height="25">
+                          <use xlink:href="images/sprite.svg#social-youtube-white"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main__inner container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <div class="breadcrumbs"><a class="breadcrumbs__tag" href="#">наука</a>
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Новости</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Наука</a></li>
+                <li class="breadcrumbs__item">Ученые установили, что Новгородский кремль... </li>
+              </ul>
+            </div>
+            <div class="main-time"><a href="#"><span class="main-time__icon"><i class="fa fa-clock-o"></i></span><span class="main-time__text">2 часа назад</span></a></div>
+            <article class="article">
+              <h2 class="article__title">Ученые установили, что Новгородский кремль был заложен на 300 лет раньше, чем считалось до сих пор</h2>
+              <div class="article__slider">
+                <div class="article-slider">
+                  <div class="article-slider__items">
+                    <div class="article-slider__item"><img src="images/article/1.jpg"></div>
+                    <div class="article-slider__item"><img src="images/article/1.jpg"></div>
+                    <div class="article-slider__item"><img src="images/article/1.jpg"></div>
+                    <div class="article-slider__item"><img src="images/article/1.jpg"></div>
+                  </div>
+                  <div class="article-slider__prs">
+                    <div class="article-slider__pr"><img src="images/article/2.jpg"></div>
+                    <div class="article-slider__pr"><img src="images/article/3.jpg"></div>
+                    <div class="article-slider__pr"><img src="images/article/4.jpg"></div>
+                    <div class="article-slider__pr"><img src="images/article/2.jpg"></div>
+                  </div>
+                </div>
+              </div>
+              <p>30 января. Interfax-Russia.ru - Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.</p>
+              <p>Заявление об этом на межрегиональной конференции "Новгород и Новгородская земля. История и археология" сделали в совместном докладе сотрудник Института археологии РАН Олег Олейников и сотрудник Института географии РАН Андрей Долгих.</p>
+              <p>Ранее наиболее распространенной в научных кругах была гипотеза о том, что первые крепостные постройки в Детинце были возведены лишь в XIII веке.</p>
+              <div class="article__video"><img src="images/article/video.jpg" style="width: 100%; height: auto;"></div>
+              <p>В течение последних лет О.Олейников провел раскопки у двух объектов - Владимирской башни на севере Кремля и Пречистенской арки в центре Детинца. В ходе раскопок археолог, в частности, обнаружил массивные дубовые бревна которые, предположительно, являлись частями конструкций древних городских укреплений.</p>
+              <p>Возможно, бревна были фрагментами городней (городнями называли фортификационные сооружения славян - срубы, которые засыпались землей - ИФ). Они могли становиться частью крепостной стены между башнями, а могли быть и опорой для возводившихся на них крепостных стен и башен.</p>
+              <div class="article__gallery">
+                <div class="article-gallery">
+                  <div class="article-gallery__items">
+                    <div class="article-gallery__item"><a href="images/article/g-1.jpg" data-fancybox="gallery"><img src="images/article/g-1.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-2.jpg" data-fancybox="gallery"><img src="images/article/g-2.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-3.jpg" data-fancybox="gallery"><img src="images/article/g-3.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-4.jpg" data-fancybox="gallery"><img src="images/article/g-4.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-4.jpg" data-fancybox="gallery"><img src="images/article/g-4.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-3.jpg" data-fancybox="gallery"><img src="images/article/g-3.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-1.jpg" data-fancybox="gallery"><img src="images/article/g-1.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-2.jpg" data-fancybox="gallery"><img src="images/article/g-2.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-1.jpg" data-fancybox="gallery"><img src="images/article/g-1.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-2.jpg" data-fancybox="gallery"><img src="images/article/g-2.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-3.jpg" data-fancybox="gallery"><img src="images/article/g-3.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-4.jpg" data-fancybox="gallery"><img src="images/article/g-4.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-4.jpg" data-fancybox="gallery"><img src="images/article/g-4.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-3.jpg" data-fancybox="gallery"><img src="images/article/g-3.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-1.jpg" data-fancybox="gallery"><img src="images/article/g-1.jpg"></a></div>
+                    <div class="article-gallery__item"><a href="images/article/g-2.jpg" data-fancybox="gallery"><img src="images/article/g-2.jpg"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="aritcle__foo">
+                <div class="article-foo">
+                  <div class="article-foo__columns">
+                    <div class="article-foo__column article-foo__column_social">
+                      <div class="article-foo__title">Поделиться:</div>
+                      <ul class="social">
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="svg" width="25" height="25">
+                              <use xlink:href="images/sprite.svg#social-instagram-black"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="svg" width="25" height="25">
+                              <use xlink:href="images/sprite.svg#social-vk-black"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="svg" width="25" height="25">
+                              <use xlink:href="images/sprite.svg#social-fb-black"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="svg" width="25" height="25">
+                              <use xlink:href="images/sprite.svg#social-twitter-black"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="svg" width="25" height="25">
+                              <use xlink:href="images/sprite.svg#social-youtube-black"></use>
+                            </svg></a></li>
+                      </ul>
+                    </div>
+                    <div class="article-foo__column article-foo__column_button"><a class="button button_theme_dark article-foo__button" href="#call" data-fancybox>Написать нам</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__downloads"><a class="article-download" href="#"><span class="article-download__icon"><i class="fa fa-download"></i></span><span class="article-download__text">Скачать свидетельство о регистрации СМИ</span></a><a class="article-download" href="#"><span class="article-download__icon"><i class="fa fa-download"></i></span><span class="article-download__text">Скачать реквизиты</span></a><a class="article-download" href="#"><span class="article-download__icon"><i class="fa fa-download"></i></span><span class="article-download__text">ИНН</span></a></div>
+              <div class="article__garant">
+                <div class="article-garant">
+                  <div class="article-garant__column article-garant__column_left">
+                    <input class="article-garant__field" type="text" placeholder="Гарантия">
+                  </div>
+                  <div class="article-garant__column article-garant__column_right">
+                    <button class="button button_theme_dark article-garant__button">Найти <i class="fa fa-arrow-right article-garant__button-icon"></i></button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-3">
+            <aside class="aside">
+              <div class="aside__banner"><a href="#"><img src="images/banner/aside-1.jpg" style="width: 100%; height: auto;"></a></div>
+              <div class="aside__banner"><a href="#"><img src="images/banner/aside-2.jpg" style="width: 100%; height: auto;"></a></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="subscribe-line__container">
+              <div class="subscribe__title subscribe__title_white">Подписаться на новости:</div>
+              <div class="subscribe__form subscribe__form_white">
+                <input class="subscribe__field subscribe__field_white" type="text" placeholder="Ваш email">
+                <button class="subscribe__button subscribe__button_white"><i class="fa fa-arrow-right"></i></button>
+              </div>
+              <div class="subscribe__desc subscribe__desc_white">Подписываясь на рассылку, вы соглашаетесь с <a href="">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="other-news">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix">
+            <div class="col-xs-12">
+              <h3 class="other-news__title">Новости по теме:</h3>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="main-grid">
+              <div class="main-grid__item main-grid__item_x1"><a class="news-item news-item_bg news-item_size_1x" href="#">
+                  <div class="news-item__pr"><img src="images/news-item/x1/7.jpg"></div>
+                  <div class="news-item__body">
+                    <div class="news-item__tag">Наука</div>
+                    <div class="news-item__title">
+                      <div class="news-item__inner-title">В Новгородской области поисковики обнаружили первый медальон этого...</div>
+                    </div>
+                    <div class="news-item__time"> <span class="news-item__time-icon"><i class="fa fa-clock-o"></i></span>2 дня назад</div>
+                  </div></a></div>
+              <div class="main-grid__item main-grid__item_x1"><a class="news-item news-item_size_1x news-item_no-tag" href="#">
+                  <div class="news-item__body">
+                    <div class="news-item__title">
+                      <div class="news-item__inner-title">Экономьте, просто вовремя передавая показания счетчика электроэнергии</div>
+                    </div>
+                    <div class="news-item__desc">Сбытовые компании просят передавать показания счётчика в определённые дни, при этом не все понимают в чем разница и откуда эти сроки. Разберемся и подробно и ответим на вопрос, почему передавать показания с 23 по 26 число – выгодно.</div>
+                    <div class="news-item__time"> <span class="news-item__time-icon"><i class="fa fa-clock-o"></i></span>2 дня назад</div>
+                  </div></a></div>
+              <div class="main-grid__item main-grid__item_x1"><a class="news-item news-item_size_1x" href="#">
+                  <div class="news-item__body">
+                    <div class="news-item__tag">История</div>
+                    <div class="news-item__title">
+                      <div class="news-item__inner-title">В Новгородской области поисковики обнаружили первый медальон в новом сезоне</div>
+                    </div>
+                    <div class="news-item__desc">Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.</div>
+                    <div class="news-item__time"> <span class="news-item__time-icon"><i class="fa fa-clock-o"></i></span>2 дня назад</div>
+                  </div></a></div>
+              <div class="main-grid__item main-grid__item_x1"><a class="news-item news-item_bg news-item_size_1x news-item_no-tag" href="#">
+                  <div class="news-item__pr"><img src="images/news-item/x1/10.jpg"></div>
+                  <div class="news-item__body">
+                    <div class="news-item__title">
+                      <div class="news-item__inner-title">Новгородцам предлагают выбрать территории для благоустройства</div>
+                    </div>
+                    <div class="news-item__time"> <span class="news-item__time-icon"><i class="fa fa-clock-o"></i></span>2 дня назад</div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="col-xs-12"><a class="other-news__more" href="#">Ещё</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="foo">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-4"><img src="images/logo-foo.png"></div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="foo__social">
+              <ul class="social">
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="svg" width="25" height="25">
+                      <use xlink:href="images/sprite.svg#social-instagram-black"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="svg" width="25" height="25">
+                      <use xlink:href="images/sprite.svg#social-vk-black"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="svg" width="25" height="25">
+                      <use xlink:href="images/sprite.svg#social-fb-black"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="svg" width="25" height="25">
+                      <use xlink:href="images/sprite.svg#social-twitter-black"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <svg class="svg" width="25" height="25">
+                      <use xlink:href="images/sprite.svg#social-youtube-black"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="foo__subscribe">
+              <div class="subscribe">
+                <header class="subscribe__header">
+                  <div class="subscribe__title">Подписаться:</div>
+                  <div class="subscribe__form">
+                    <input class="subscribe__field" type="text" placeholder="adress@mail.ru">
+                    <button class="subscribe__button"><i class="fa fa-arrow-right"></i></button>
+                  </div>
+                </header>
+                <div class="subscribe__desc">Подписываясь на рассылку, вы соглашаетесь с <a href="">политикой конфиденциальности</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="foo__nav">
+              <nav class="nav-bottom">
+                <ul class="nav-bottom__list">
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Главное</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Политика</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Экономика</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">В мире</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Происшествия</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Культура</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Общество</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Культура</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Спорт</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">В эфире</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Наука и технологии</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Религия и мировоззрение</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Справки</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Анонсы</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Опросы</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Тесты</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Фото</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Инфографика</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Видео</a></li>
+                  <li class="nav-bottom__item"><a class="nav-bottom__link" href="#">Карикатуры</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-xs-12 text-center"><a class="foo__link" href="#">Свидетельство о регистрации СМИ</a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <form class="popup" id="call">
+        <h3 class="popup__title">Вы знаете что-то и хотите нам рассказать?</h3>
+        <p class="popup__slogan">У вас есть тема? Вы находитесь на месте событий? Мы написали текст по теме, вы знаете больше нас? Напишите нам!</p>
+        <label class="popup__label">Как с вами связаться?</label>
+        <input class="popup__field" type="text" placeholder="Адрес электронной почты или телефон">
+        <label class="popup__label">О чём хотите рассказать?</label>
+        <textarea class="popup__field popup__field_text" type="text" placeholder="Введите сообщене ..."></textarea>
+        <div class="popup__filename"></div>
+        <div class="file_upload">
+          <button class="popup__button popup__button_file button button_theme_white" type="button">Прикрепить файл</button>
+          <input class="popup__field_file hidden" type="file">
+        </div>
+        <button class="popup__button button button_theme_dark">Написать<i class="popup__button-icon fa fa-arrow-right"></i></button>
+      </form>
+    </div>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/slick-carousel/slick/slick.min.js"></script>
+    <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="js/flexmenu.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

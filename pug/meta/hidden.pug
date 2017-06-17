@@ -1,0 +1,15 @@
+.hidden
+	form.popup#call
+		h3.popup__title Вы знаете что-то и хотите нам рассказать?
+		p.popup__slogan У вас есть тема? Вы находитесь на месте событий? Мы написали текст по теме, вы знаете больше нас? Напишите нам!
+		label.popup__label Как с вами связаться?
+		input.popup__field(type="text" placeholder="Адрес электронной почты или телефон")
+		label.popup__label О чём хотите рассказать?
+		textarea.popup__field.popup__field_text(type="text" placeholder="Введите сообщене ...")
+		.popup__filename
+		.file_upload
+			button.popup__button.popup__button_file.button.button_theme_white(type="button") Прикрепить файл
+			input.popup__field_file.hidden(type="file")
+		button.popup__button.button.button_theme_dark
+			| Написать
+			i.popup__button-icon.fa.fa-arrow-right

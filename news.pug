@@ -1,0 +1,152 @@
+doctype html
+html(lang="ru")
+	head
+		title parohod — новость
+		include pug/meta/meta
+		include pug/meta/link
+		//- include pug/meta/test
+		
+		style.
+			body {
+				//- background: url(tests/glass/news.jpg) center top;
+			}
+	body
+		include pug/blocks/header
+		
+		.main
+			.main__inner.container: .row
+				.col-xs-12.col-sm-8
+					.breadcrumbs
+						a.breadcrumbs__tag(href="#") наука
+						ul.breadcrumbs__list
+							li.breadcrumbs__item: a.breadcrumbs__link(href="#") Главная
+							li.breadcrumbs__item: a.breadcrumbs__link(href="#") Новости
+							li.breadcrumbs__item: a.breadcrumbs__link(href="#") Наука
+							li.breadcrumbs__item Ученые установили, что Новгородский кремль... 
+					.main-time: a(href="#")
+						span.main-time__icon: i.fa.fa-clock-o
+						span.main-time__text 2 часа назад
+					article.article
+						h2.article__title Ученые установили, что Новгородский кремль был заложен на 300 лет раньше, чем считалось до сих пор
+						.article__slider
+							.article-slider
+								.article-slider__items
+									.article-slider__item: img(src="images/article/1.jpg")
+									.article-slider__item: img(src="images/article/1.jpg")
+									.article-slider__item: img(src="images/article/1.jpg")
+									.article-slider__item: img(src="images/article/1.jpg")
+								.article-slider__prs
+									.article-slider__pr: img(src="images/article/2.jpg")
+									.article-slider__pr: img(src="images/article/3.jpg")
+									.article-slider__pr: img(src="images/article/4.jpg")
+									.article-slider__pr: img(src="images/article/2.jpg")
+						p 30 января. Interfax-Russia.ru - Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+						p Заявление об этом на межрегиональной конференции "Новгород и Новгородская земля. История и археология" сделали в совместном докладе сотрудник Института археологии РАН Олег Олейников и сотрудник Института географии РАН Андрей Долгих.
+						p Ранее наиболее распространенной в научных кругах была гипотеза о том, что первые крепостные постройки в Детинце были возведены лишь в XIII веке.
+						.article__video: img(src="images/article/video.jpg" style="width: 100%; height: auto")
+						p В течение последних лет О.Олейников провел раскопки у двух объектов - Владимирской башни на севере Кремля и Пречистенской арки в центре Детинца. В ходе раскопок археолог, в частности, обнаружил массивные дубовые бревна которые, предположительно, являлись частями конструкций древних городских укреплений.
+						p Возможно, бревна были фрагментами городней (городнями называли фортификационные сооружения славян - срубы, которые засыпались землей - ИФ). Они могли становиться частью крепостной стены между башнями, а могли быть и опорой для возводившихся на них крепостных стен и башен.
+						.article__gallery: .article-gallery: .article-gallery__items
+							.article-gallery__item: a(href="images/article/g-1.jpg" data-fancybox="gallery"): img(src="images/article/g-1.jpg")
+							.article-gallery__item: a(href="images/article/g-2.jpg" data-fancybox="gallery"): img(src="images/article/g-2.jpg")
+							.article-gallery__item: a(href="images/article/g-3.jpg" data-fancybox="gallery"): img(src="images/article/g-3.jpg")
+							.article-gallery__item: a(href="images/article/g-4.jpg" data-fancybox="gallery"): img(src="images/article/g-4.jpg")
+							.article-gallery__item: a(href="images/article/g-4.jpg" data-fancybox="gallery"): img(src="images/article/g-4.jpg")
+							.article-gallery__item: a(href="images/article/g-3.jpg" data-fancybox="gallery"): img(src="images/article/g-3.jpg")
+							.article-gallery__item: a(href="images/article/g-1.jpg" data-fancybox="gallery"): img(src="images/article/g-1.jpg")
+							.article-gallery__item: a(href="images/article/g-2.jpg" data-fancybox="gallery"): img(src="images/article/g-2.jpg")
+							.article-gallery__item: a(href="images/article/g-1.jpg" data-fancybox="gallery"): img(src="images/article/g-1.jpg")
+							.article-gallery__item: a(href="images/article/g-2.jpg" data-fancybox="gallery"): img(src="images/article/g-2.jpg")
+							.article-gallery__item: a(href="images/article/g-3.jpg" data-fancybox="gallery"): img(src="images/article/g-3.jpg")
+							.article-gallery__item: a(href="images/article/g-4.jpg" data-fancybox="gallery"): img(src="images/article/g-4.jpg")
+							.article-gallery__item: a(href="images/article/g-4.jpg" data-fancybox="gallery"): img(src="images/article/g-4.jpg")
+							.article-gallery__item: a(href="images/article/g-3.jpg" data-fancybox="gallery"): img(src="images/article/g-3.jpg")
+							.article-gallery__item: a(href="images/article/g-1.jpg" data-fancybox="gallery"): img(src="images/article/g-1.jpg")
+							.article-gallery__item: a(href="images/article/g-2.jpg" data-fancybox="gallery"): img(src="images/article/g-2.jpg")
+						.aritcle__foo
+							.article-foo: .article-foo__columns
+								.article-foo__column.article-foo__column_social
+									.article-foo__title Поделиться:
+									ul.social
+										li.social__item: a.social__link(href="#"): svg.svg(width="25", height="25"): use(xlink:href="images/sprite.svg#social-instagram-black")
+										li.social__item: a.social__link(href="#"): svg.svg(width="25", height="25"): use(xlink:href="images/sprite.svg#social-vk-black")
+										li.social__item: a.social__link(href="#"): svg.svg(width="25", height="25"): use(xlink:href="images/sprite.svg#social-fb-black")
+										li.social__item: a.social__link(href="#"): svg.svg(width="25", height="25"): use(xlink:href="images/sprite.svg#social-twitter-black")
+										li.social__item: a.social__link(href="#"): svg.svg(width="25", height="25"): use(xlink:href="images/sprite.svg#social-youtube-black")
+								.article-foo__column.article-foo__column_button: a.button.button_theme_dark.article-foo__button(href="#call" data-fancybox) Написать нам
+						.article__downloads
+							a.article-download(href="#")
+								span.article-download__icon: i.fa.fa-download
+								span.article-download__text Скачать свидетельство о регистрации СМИ
+							
+							a.article-download(href="#")
+								span.article-download__icon: i.fa.fa-download
+								span.article-download__text Скачать реквизиты
+							
+							a.article-download(href="#")
+								span.article-download__icon: i.fa.fa-download
+								span.article-download__text ИНН
+						.article__garant
+							.article-garant
+								.article-garant__column.article-garant__column_left: input.article-garant__field(type="text", placeholder="Гарантия")
+								.article-garant__column.article-garant__column_right: button.button.button_theme_dark.article-garant__button
+									| Найти 
+									i.fa.fa-arrow-right.article-garant__button-icon
+				.col-xs-12.col-sm-offset-1.col-sm-3: aside.aside
+					.aside__banner: a(href="#"): img(src="images/banner/aside-1.jpg", style="width: 100%; height: auto;")
+					.aside__banner: a(href="#"): img(src="images/banner/aside-2.jpg", style="width: 100%; height: auto;")
+		.subscribe-line: .container: .row: .col-xs-12: .subscribe-line__container
+			.subscribe__title.subscribe__title_white Подписаться на новости:
+			.subscribe__form.subscribe__form_white
+				input.subscribe__field.subscribe__field_white(type="text", placeholder="Ваш email")
+				button.subscribe__button.subscribe__button_white: i.fa.fa-arrow-right
+			.subscribe__desc.subscribe__desc_white Подписываясь на рассылку, вы соглашаетесь с 
+				a(href="") политикой конфиденциальности
+		.other-news: .container: .row
+			.clearfix: .col-xs-12
+				h3.other-news__title Новости по теме:
+			.clearfix: .main-grid
+				.main-grid__item.main-grid__item_x1: a.news-item.news-item_bg.news-item_size_1x(href="#")
+					.news-item__pr: img(src="images/news-item/x1/7.jpg")
+					.news-item__body
+						.news-item__tag Наука
+						.news-item__title: .news-item__inner-title В Новгородской области поисковики обнаружили первый медальон этого...
+						//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+						.news-item__time 
+							span.news-item__time-icon: i.fa.fa-clock-o
+							| 2 дня назад
+				
+				.main-grid__item.main-grid__item_x1: a.news-item.news-item_size_1x.news-item_no-tag(href="#")
+					//- .news-item__pr: img(src="images/news-item/x1/8.jpg")
+					.news-item__body
+						//- .news-item__tag история
+						.news-item__title: .news-item__inner-title Экономьте, просто вовремя передавая показания счетчика электроэнергии
+						.news-item__desc Сбытовые компании просят передавать показания счётчика в определённые дни, при этом не все понимают в чем разница и откуда эти сроки. Разберемся и подробно и ответим на вопрос, почему передавать показания с 23 по 26 число – выгодно.
+						.news-item__time 
+							span.news-item__time-icon: i.fa.fa-clock-o
+							| 2 дня назад
+				
+				.main-grid__item.main-grid__item_x1: a.news-item.news-item_size_1x(href="#")
+					//- .news-item__pr: img(src="images/news-item/1/4x.jpg")
+					.news-item__body
+						.news-item__tag История
+						.news-item__title: .news-item__inner-title В Новгородской области поисковики обнаружили первый медальон в новом сезоне
+						.news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+						.news-item__time 
+							span.news-item__time-icon: i.fa.fa-clock-o
+							| 2 дня назад
+				
+				.main-grid__item.main-grid__item_x1: a.news-item.news-item_bg.news-item_size_1x.news-item_no-tag(href="#")
+					.news-item__pr: img(src="images/news-item/x1/10.jpg")
+					.news-item__body
+						//- .news-item__tag Наука
+						.news-item__title: .news-item__inner-title Новгородцам предлагают выбрать территории для благоустройства
+						//- .news-item__desc Великий Новгород. 30 января. ИНТЕРФАКС СЕВЕРО-ЗАПАД — Московские ученые установили, что первая крепость на территории современного Новгородского кремля (Детинца) была заложена примерно на 300 лет раньше, чем считалось до сих пор.
+						.news-item__time 
+							span.news-item__time-icon: i.fa.fa-clock-o
+							| 2 дня назад
+			.clearfix: .col-xs-12
+				a.other-news__more(href="#") Ещё
+		include pug/blocks/foo
+		include pug/meta/hidden
+		include pug/meta/scripts
